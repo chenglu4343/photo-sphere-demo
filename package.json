@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@photo-sphere-viewer/core": "^5.1.1",
     "vue": "^3.2.45"
   },
   "devDependencies": {
