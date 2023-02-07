@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@photo-sphere-viewer/core': ^5.1.1
+  '@photo-sphere-viewer/markers-plugin': ^5.1.1
   '@vitejs/plugin-vue': ^4.0.0
   typescript: ^4.9.3
   vite: ^4.1.0
@@ -10,6 +11,7 @@ specifiers:
 
 dependencies:
   '@photo-sphere-viewer/core': 5.1.1
+  '@photo-sphere-viewer/markers-plugin': 5.1.1
   vue: 3.2.47
 
 devDependencies:
@@ -245,6 +247,12 @@ packages:
     resolution: {integrity: sha512-gV7xQ8904H3aJHszQY6t9yocEH07+2vak3/QDXcEG8INU5CTpRclBThJzgvlxcncAM9dHDmHAbmo8KVkeHgZQw==}
     dependencies:
       three: 0.149.0
+    dev: false
+
+  /@photo-sphere-viewer/markers-plugin/5.1.1:
+    resolution: {integrity: sha512-HgnIN0+Drc7HCxJXIzBT9BwKkftLduUM6Ssqml8cBCYgk023s2z9Y5e9an6RC5X9LLeiyz9me1Lit7i+lnMhFQ==}
+    dependencies:
+      '@photo-sphere-viewer/core': 5.1.1
     dev: false
 
   /@vitejs/plugin-vue/4.0.0_vite@4.1.1+vue@3.2.47:
