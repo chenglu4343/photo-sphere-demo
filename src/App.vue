@@ -7,7 +7,8 @@ import { Viewer, DEFAULTS } from '@photo-sphere-viewer/core'
 import { MarkersPlugin } from '@photo-sphere-viewer/markers-plugin'
 import { onMounted, ref } from 'vue'
 import '@photo-sphere-viewer/markers-plugin/index.css'
-import { FastGetPolyline } from './plugin'
+// import { FastGetPolyline } from './plugin'
+import { useFastPolyline } from './hooks/useFastPolyline'
 
 const containerRef = ref<HTMLElement | null>(null)
 const baseUrl = 'https://photo-sphere-viewer-data.netlify.app/assets/'
@@ -32,7 +33,7 @@ onMounted(() => {
 		maxFov: 90,
 		defaultZoomLvl: 50,
 
-		plugins: [MarkersPlugin, FastGetPolyline],
+		plugins: [MarkersPlugin],
 
 		/** 水平旋转角度 */
 		defaultYaw: -Math.PI / 2,
@@ -54,6 +55,8 @@ onMounted(() => {
 		/** 滚轮放大缩小需要ctrl */
 		mousewheelCtrlKey: false,
 	})
+
+	useFastPolyline(viewer)
 })
 </script>
 
